@@ -16,6 +16,15 @@ This prototype is a **GTM Intelligence Agent** designed to ingest raw, unstructu
 * **Owner-Based Actions:** Generates specific, high-velocity next steps for AEs, Solutions Engineers, and Implementation Managers.
 * **Risk Detection:** Flags "Critical Blockers" like missing technical owners or unresolved compliance dependencies.
 
+
+## 🧠 Architectural Logic: Automating the "Bandaid"
+To solve for unstructured GTM data, this agent uses a **Multi-Step Heuristic Engine**:
+
+1. **Entity Resolution:** Uses fuzzy matching logic to extract Account names from conversational notes (e.g., extracting "Acme Corp" from "spoke with the Acme team today").
+2. **Weighted Readiness Scoring:** Unlike a standard summary, the agent applies negative weight to 'Technical Debt'—if an Engineering POC or Webhook strategy is missing, the score is capped to prevent premature handoffs.
+3. **Action-Oriented JSON Schema:** Outputs are mapped to specific GTM personas (AE, SE, Implementation) to ensure zero-loss communication between departments.
+
+
 ## 🛠️ The Tech Stack
 * **Engine:** Gemini 2.0 Flash (via Google GenAI SDK)
 * **Framework:** Python & Streamlit
