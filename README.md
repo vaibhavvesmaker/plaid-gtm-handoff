@@ -1,7 +1,8 @@
 # ⚡ Plaid GTM Handoff Structurer
 ### *Automating the "Bandaids": Bridging the gap between Sales Discovery and Technical Implementation.*
+![Streamlit](https://img.shields.io/badge/Live_Prototype-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white) 
+👉 [Click here to view the Live App](https://plaid-gtm-handoff-5teplzqnevly6drj6mgay7.streamlit.app/)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_svg.svg)](https://plaid-gtm-handoff-5teplzqnevly6drj6mgay7.streamlit.app/)
 
 ## 🎯 The Mission
 In high-growth Fintech GTM, the "Sales-to-Implementation" handoff is often a friction point. Messy discovery notes lead to manual triage, delayed integration, and slower "Time to First Transaction" (TTFT).
