@@ -105,6 +105,12 @@ if st.button("Generate Handoff Brief"):
         st.warning("Please paste some handoff notes first.")
     else:
         prompt = f"""
+        # Add this tiny instruction to the end of your existing prompt variable
+
+ADDITIONAL CRITICAL INSTRUCTION:
+- If 'Account:' or a company name isn't found, look at the first line of the notes.
+- Strictly deduct 20 points from the handoff_readiness_score for every 'Missing Information' item.
+
 You are a GTM Operations analyst at Plaid.
 
 Your job is to convert messy sales or handoff notes into a structured internal brief.
@@ -158,6 +164,7 @@ Rules:
 Handoff Notes:
 {handoff_notes}
 """
+
 
         try:
             response = client.models.generate_content(
