@@ -47,5 +47,11 @@ The Agent is configured with a "Strict Discovery" mindset. It doesn't just summa
 - **Account Identification:** Intelligent extraction of entity names from unstructured headers.
 - **Deductive Scoring:** Unlike generic LLMs, this agent is programmed to penalize the readiness score for missing "Critical Path" items (Technical Owners, Launch Dates, or Webhook Requirements).
 - **Handoff Guardrails:** Specifically designed to prevent "Closed-Won" deals from stalling in Implementation due to poor sales-to-eng data transfer.
+
+## 🗺️ Roadmap: Scaling to Enterprise
+This prototype is a Proof of Concept. The production roadmap includes:
+* **CRM/ERP Integration:** Bi-directional sync with Salesforce and NetSuite to auto-populate "Implementation Brief" objects via webhooks.
+* **RAG-Powered Technical Audits:** Connecting the agent to Plaid’s internal API documentation to identify specific integration gaps in real-time.
+* **Slack-Ops Deployment:** Automated "Deal Health" alerts pushed to relevant Slack channels when a handoff score drops below 50.
 ---
 *Created with a focus on GTM Strategy & Operations @ Plaid.*
