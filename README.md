@@ -33,5 +33,10 @@ This prototype is a proof-of-concept for a wider **GTM Engineering** vision:
 * **RAG Implementation:** Connect to Plaid's internal Documentation (via Pinecone/Vector DB) for real-time technical gap analysis.
 * **Slack Ops:** Automated "Handoff Alerts" sent directly to the assigned Implementation Engineer.
 
+## 🧠 Logic & Heuristics
+The Agent is configured with a "Strict Discovery" mindset. It doesn't just summarize; it audits:
+- **Account Identification:** Intelligent extraction of entity names from unstructured headers.
+- **Deductive Scoring:** Unlike generic LLMs, this agent is programmed to penalize the readiness score for missing "Critical Path" items (Technical Owners, Launch Dates, or Webhook Requirements).
+- **Handoff Guardrails:** Specifically designed to prevent "Closed-Won" deals from stalling in Implementation due to poor sales-to-eng data transfer.
 ---
 *Created with a focus on GTM Strategy & Operations @ Plaid.*
